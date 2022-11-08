@@ -42,6 +42,11 @@ header {
     width: 100px;
 }
 
+.logotitle::after {
+    content:"Akuryo \a Manga & Comics";
+    white-space: pre;
+}
+
 .navbar,
 .nav-list {
     display: flex;
