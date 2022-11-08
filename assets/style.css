@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    
+    --text: #030303;
+    --backred: #570505;
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+    --cartbg: #36030e;
+    --mainbg: #160206;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    background-color: var(--backred) ;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    height: 180%;
+}
+
+.navbar,
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar {
+    gap: 150px;
+}
+
+.nav-list {
+    gap: 30px;
+}
+
+.nav-list a {
+    color: var(--text-gray);
+    font-size: 20px;
+}
+
+.nav-list li:first-child > a {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.cart-icon {
+    font-weight: 600;
+    border-radius: 10px;
+    height: 35px;
+    padding: 10px 18px;
+    margin-right: 1rem;
+    background-color: var(--cartbg);
+    color: var(--text-white);
+    border: 1px solid var(--text);
+    cursor: pointer;
+}
