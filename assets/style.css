@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
 
 :root {
     
@@ -27,11 +27,19 @@ header {
     height: 65px;
     padding: 0px 30px;
     position: fixed;
-    top: 0;
 }
 
-.logo {
-    height: 180%;
+.logo a {
+    color: var(--text-white);
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
 }
 
 .navbar,
@@ -59,6 +67,16 @@ header {
     font-weight: 600;
 }
 
+.navbar a:hover{
+    background-color: var(--cartbg);
+    border-radius: 10px;
+    font-size: 25px;
+    border: 3px black solid;
+    box-shadow: 7px 7px black;
+    padding: 5px 5px;
+    
+}
+
 .cart-icon {
     font-weight: 600;
     border-radius: 10px;
@@ -69,4 +87,8 @@ header {
     color: var(--text-white);
     border: 1px solid var(--text);
     cursor: pointer;
+}
+
+body {
+    background: var(--mainbg);
 }
