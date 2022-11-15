@@ -151,7 +151,7 @@ background: linear-gradient(0deg, rgba(22,2,6,1) 68%, rgba(87,5,5,1) 100%);
 #nosotros {
     border: solid var(--border);
     border-radius: 15px;
-    margin-top: 30px;
+    margin: 30px 30px;
     padding: 10px 0;
     max-width: 1200px;
     display: flex;
