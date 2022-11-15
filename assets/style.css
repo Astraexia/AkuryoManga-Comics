@@ -8,6 +8,7 @@
     --text-white: #f3f4f6;
     --cartbg: #36030e;
     --mainbg: #160206;
+    --border: #050014;
 }
 
 * {
@@ -26,7 +27,7 @@ header {
     align-items: center;
     height: 65px;
     padding: 0px 30px;
-    position: fixed;
+    position: absolute;
 }
 
 .logo a {
@@ -94,6 +95,82 @@ header {
     cursor: pointer;
 }
 
-body {
-    background: var(--mainbg);
+main {
+    background: rgb(22,2,6);
+background: linear-gradient(0deg, rgba(22,2,6,1) 68%, rgba(87,5,5,1) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#hero {
+    border: solid var(--border);
+    border-radius: 15px;
+    margin-top: 90px;
+    padding: 50px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info h1 {
+    font-family: 'Poor Story', cursive;
+    font-size: 40px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    color: var(--text-white);
+}
+
+.hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.hero-info p {
+    color: var(--text-gray);
+    font-size: 20px;
+    width: 75%;
+}
+
+#hero span {
+    color: var(--text-white);
+    font-weight: 600;
+}
+
+.hero-img {
+    border-radius: 15px;
+    border: solid var(--border);
+}
+
+#nosotros {
+    border: solid var(--border);
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 10px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+}
+
+.nosotros-info h1 {
+    font-family: 'Poor Story', cursive;
+    color: var(--text-white);
+    text-decoration: underline;
+    font-size: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros-info {
+    color: var(--text-gray);
+    padding: 5px 10px;
+    font-size: 20px;
 }
