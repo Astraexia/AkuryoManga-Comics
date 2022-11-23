@@ -19,6 +19,8 @@
     list-style-type: none;
 }
 
+/*Header y navbar*/
+
 header {
     background-color: var(--backred) ;
     width: 100%;
@@ -76,10 +78,10 @@ header {
 .navbar a:hover{
     background-color: var(--cartbg);
     border-radius: 10px;
-    font-size: 25px;
     border: 3px black solid;
     box-shadow: 7px 7px black;
     padding: 5px 5px;
+    transition: all 0.3s;
     
 }
 
@@ -95,6 +97,8 @@ header {
     cursor: pointer;
 }
 
+/* Main*/
+
 main {
     background: rgb(22,2,6);
 background: linear-gradient(0deg, rgba(22,2,6,1) 5%, rgba(86,5,5,1) 90%, rgba(87,5,5,1) 100%);
@@ -104,6 +108,8 @@ background: linear-gradient(0deg, rgba(22,2,6,1) 5%, rgba(86,5,5,1) 90%, rgba(87
     justify-content: center;
     width: 100%;
 }
+
+/*Hero*/
 
 #hero {
     border: solid var(--border);
@@ -148,6 +154,8 @@ background: linear-gradient(0deg, rgba(22,2,6,1) 5%, rgba(86,5,5,1) 90%, rgba(87
     border: solid var(--border);
 }
 
+/*Info sobre nosotros*/
+
 #nosotros {
     border: solid var(--border);
     border-radius: 15px;
@@ -161,7 +169,6 @@ background: linear-gradient(0deg, rgba(22,2,6,1) 5%, rgba(86,5,5,1) 90%, rgba(87
 .nosotros-info h1 {
     font-family: 'Poor Story', cursive;
     color: var(--text-white);
-    text-decoration: underline;
     font-size: 40px;
     padding: 10px;
     display: flex;
@@ -173,4 +180,254 @@ background: linear-gradient(0deg, rgba(22,2,6,1) 5%, rgba(86,5,5,1) 90%, rgba(87
     color: var(--text-gray);
     padding: 5px 10px;
     font-size: 20px;
+}
+
+/*Cards*/
+
+#cards {
+    border: solid var(--border);
+    border-radius: 15px;
+    margin: 30px 30px;
+    padding: 10px 0;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cards h1 {
+    font-family: 'Poor Story', cursive;
+    color: var(--text-white);
+    font-size: 40px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.productos {
+    margin: 10px;
+    padding: 10px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.productos h2 {
+    padding: 5px;
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+}
+
+.productos h2:hover {
+    background-color: var(--border);
+    border-radius: 10px;
+    padding: 5px 5px;
+    transition: 0.3s;
+}
+
+.nacionales img {
+    height: 350px;
+    width: 250px;
+    border: solid var(--border);
+    border-radius: 15px;
+}
+
+
+.eng img {
+    height: 350px;
+    width: 250px;
+    border: solid var(--border);
+    border-radius: 15px;
+}
+
+.jp img {
+    height: 350px;
+    width: 250px;
+    border: solid var(--border);
+    border-radius: 15px;
+}
+
+.comic img {
+    height: 350px;
+    width: 250px;
+    border: solid var(--border);
+    border-radius: 15px;
+}
+
+/* Contacto*/
+
+#contacto {
+    border: solid var(--border);
+    border-radius: 15px;
+    margin: 30px 30px;
+    padding: 10px 0;
+    max-width: 1200px;
+}
+
+#contacto h1 {
+    font-family: 'Poor Story', cursive;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+}
+
+#contacto p {
+    color: var(--text-gray);
+    padding: 5px 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-contacto {
+    color: var(--text-gray);
+    display: flex;
+    flex-direction: column;
+}
+
+.nombre {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.nombre label {
+    display: flex;
+    justify-items: center;
+}
+
+.correo {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.correo label {
+    display: flex;
+    justify-items: center;
+}
+
+.telefono {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+
+}
+
+.telefono label {
+    display: flex;
+    justify-items: center;
+}
+
+.consulta {
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.consulta label {
+    display: flex;
+    justify-items: center;
+}
+
+.enviar input {
+    background-color: var(--cartbg);
+    color: var(--text-white);
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.enviar input:hover {
+    background-color: var(--cartbg);
+    border-radius: 10px;
+    border: 3px black solid;
+    box-shadow: 7px 7px black;
+    padding: 5px 5px;
+    transition: all 0.3s;
+}
+
+/*Mapa*/
+
+#ubicacion {
+    border: solid var(--border);
+    border-radius: 15px;
+    margin: 30px 30px;
+    padding: 10px 0;
+    width: 1200px;
+}
+
+#ubicacion h1 {
+    font-family: 'Poor Story', cursive;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--text-white);
+    display: flex;
+    justify-content: center;
+}
+
+#ubicacion p {
+    color: var(--text-gray);
+    padding: 5px 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center; 
+}
+
+.mapa {
+   margin: 20px 20px;
+   display: flex;
+   justify-content: center;
+}
+
+/*Footer*/
+
+footer {
+    background: rgb(87,5,5);
+    background: linear-gradient(0deg, rgba(87,5,5,1) 38%, rgba(22,2,6,1) 99%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 0;
+}
+
+footer a {
+    color: var(--text-gray);
+    font-weight: 300;
+    font-size: 14px;
+}
+
+footer p {
+    color: var(--text-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo p img {
+    height: 150px;
+    width: 150px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-logo span {
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+    font-weight: 600;
 }
